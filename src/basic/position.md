@@ -23,6 +23,6 @@ If an entity is inside another entity, the positioning is relative to the parent
 </a-entity>
 ```
 
-Further reading:
+## Further reading:
 
 - [A-Frame Docs: Position](https://aframe.io/docs/0.2.0/components/position.html)

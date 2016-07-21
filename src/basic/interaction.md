@@ -50,6 +50,6 @@ You can use the `fusing` and `click` events to trigger animations to indicate wh
 </a-entity>
 ```
 
-Further reading:
+## Further reading:
 
 - [A-Frame Docs: Cursor](https://aframe.io/docs/0.2.0/components/cursor.html)

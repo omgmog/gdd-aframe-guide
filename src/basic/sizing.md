@@ -33,7 +33,7 @@ When working with the `<a-sphere>` entity, you specify the size using the `radiu
 
 If you want to create a non-uniformly sized sphere, you can use scaling to squash or stretch on any of the x/y/z axis.
 
-Further reading:
+## Further reading:
 
 - [A-Frame Docs: Geometry](https://aframe.io/docs/0.2.0/components/geometry.html)
 - [A-Frame Docs: Scale](https://aframe.io/docs/0.2.0/components/scale.html)

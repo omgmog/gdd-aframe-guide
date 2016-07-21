@@ -30,6 +30,6 @@ This will produce a red box:
 ![](https://i.imgur.com/AHq1KUf.png){:.ui.image.centered.fluid}
 
 
-Further reading:
+## Further reading:
 
 - [A-Frame Docs: Entity](https://aframe.io/docs/0.2.0/core/entity.html)
