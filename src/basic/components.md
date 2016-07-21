@@ -24,3 +24,7 @@ If a component has more than one property to define, then properties are passed 
 ```html
 <a-entity geometry="primitive: box; width: 1">
 ```
+
+## Further reading:
+
+- [A-Frame Docs: Components](https://aframe.io/docs/0.2.0/core/component.html)
