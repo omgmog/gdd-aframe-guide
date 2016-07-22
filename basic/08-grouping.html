@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grouping</title>
+  <link rel="stylesheet" href="/assets/semantic.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/rouge.css">
+</head>
+<body>
+<div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="/" class="header item">
+        A-Frame Guide
+      </a>
+      <a href="/" class="item">Home</a>
+      <div class="ui simple dropdown item">
+        Basic <i class="dropdown icon"></i>
+        <div class="menu">
+          
+          
+            <a class="item" href="/basic/01-entities.html">Entities</a>
+          
+            <a class="item" href="/basic/02-components.html">Components</a>
+          
+            <a class="item" href="/basic/03-materials.html">Materials</a>
+          
+            <a class="item" href="/basic/04-assets.html">Assets</a>
+          
+            <a class="item" href="/basic/05-lighting.html">Lighting</a>
+          
+            <a class="item" href="/basic/06-sizing.html">Sizing</a>
+          
+            <a class="item" href="/basic/07-position.html">Position</a>
+          
+            <a class="item" href="/basic/08-grouping.html">Grouping</a>
+          
+            <a class="item" href="/basic/09-animation.html">Animation</a>
+          
+            <a class="item" href="/basic/10-interaction.html">Interaction</a>
+          
+            <a class="item" href="/basic/11-vr-mode.html">VR Mode</a>
+          
+        </div>
+      </div>
+      <div class="ui simple dropdown item">
+        Advanced <i class="dropdown icon"></i>
+        <div class="menu">
+          
+          
+            <a class="item" href="/advanced/01-javascript.html">JavaScript</a>
+          
+            <a class="item" href="/advanced/02-templating.html">Templating</a>
+          
+            <a class="item" href="/advanced/03-advanced-scene.html">Advanced Scene</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui main text container">
+    <h1>Grouping</h1>
+    <p>As you start to create more complicated scenes in A-Frame, you will want to group entities to make scaling or animating them easier.</p>
+
+<p>To group entities, you just need to wrap them in an entity, and then apply all of your animations to the wrapper entity.</p>
+
+<p>Here’s an example arcade joystick:</p>
+
+<p><img src="http://i.imgur.com/igRo6Dk.gif" alt="" class="ui image centered fluid" /></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a-entity</span> <span class="na">scale=</span><span class="s">".25 .25 .25"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a-entity</span> <span class="na">id=</span><span class="s">"stick"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!--
+    The ball on the top of the joystick
+    --&gt;</span>
+    <span class="nt">&lt;a-sphere</span>
+      <span class="na">radius=</span><span class="s">"1.8"</span>
+      <span class="na">position=</span><span class="s">"0 6 0"</span>
+      <span class="na">color=</span><span class="s">"#d00"</span>
+    <span class="nt">&gt;&lt;/a-sphere&gt;</span>
+    <span class="c">&lt;!-- the metal pole of the joystick --&gt;</span>
+    <span class="nt">&lt;a-cylinder</span>
+      <span class="na">height=</span><span class="s">"5.5"</span>
+      <span class="na">radius=</span><span class="s">".5"</span>
+      <span class="na">color=</span><span class="s">"#999"</span>
+      <span class="na">position=</span><span class="s">"0 2.5 0"</span>
+    <span class="nt">&gt;&lt;/a-cylinder&gt;</span>
+    <span class="c">&lt;!-- this controls the animation of the "stick" entity --&gt;</span>
+    <span class="nt">&lt;a-animation</span>
+      <span class="na">attribute=</span><span class="s">"rotation"</span>
+      <span class="na">to=</span><span class="s">"15 0 -15"</span>
+      <span class="na">from=</span><span class="s">"-15 0 15"</span>
+      <span class="na">repeat=</span><span class="s">"indefinite"</span>
+      <span class="na">fill=</span><span class="s">"forwards"</span>
+      <span class="na">direction=</span><span class="s">"alternate"</span>
+    <span class="nt">&gt;&lt;/a-animation&gt;</span>
+  <span class="nt">&lt;/a-entity&gt;</span>
+  <span class="c">&lt;!--
+  the base ring of the joystick, this doesn't need to animate
+  so it's outside of the "stick" entity
+  --&gt;</span>
+  <span class="nt">&lt;a-cylinder</span>
+    <span class="na">height=</span><span class="s">".25"</span>
+    <span class="na">radius=</span><span class="s">"2.4"</span>
+    <span class="na">color=</span><span class="s">"#222"</span>
+    <span class="na">position=</span><span class="s">"0 0 0"</span>
+  <span class="nt">&gt;&lt;/a-cylinder&gt;</span>
+<span class="nt">&lt;/a-entity&gt;</span>
+</code></pre>
+</div>
+
+  </div>
+</body>
+</html>

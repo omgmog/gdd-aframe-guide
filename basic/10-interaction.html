@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Interaction</title>
+  <link rel="stylesheet" href="/assets/semantic.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/rouge.css">
+</head>
+<body>
+<div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="/" class="header item">
+        A-Frame Guide
+      </a>
+      <a href="/" class="item">Home</a>
+      <div class="ui simple dropdown item">
+        Basic <i class="dropdown icon"></i>
+        <div class="menu">
+          
+          
+            <a class="item" href="/basic/01-entities.html">Entities</a>
+          
+            <a class="item" href="/basic/02-components.html">Components</a>
+          
+            <a class="item" href="/basic/03-materials.html">Materials</a>
+          
+            <a class="item" href="/basic/04-assets.html">Assets</a>
+          
+            <a class="item" href="/basic/05-lighting.html">Lighting</a>
+          
+            <a class="item" href="/basic/06-sizing.html">Sizing</a>
+          
+            <a class="item" href="/basic/07-position.html">Position</a>
+          
+            <a class="item" href="/basic/08-grouping.html">Grouping</a>
+          
+            <a class="item" href="/basic/09-animation.html">Animation</a>
+          
+            <a class="item" href="/basic/10-interaction.html">Interaction</a>
+          
+            <a class="item" href="/basic/11-vr-mode.html">VR Mode</a>
+          
+        </div>
+      </div>
+      <div class="ui simple dropdown item">
+        Advanced <i class="dropdown icon"></i>
+        <div class="menu">
+          
+          
+            <a class="item" href="/advanced/01-javascript.html">JavaScript</a>
+          
+            <a class="item" href="/advanced/02-templating.html">Templating</a>
+          
+            <a class="item" href="/advanced/03-advanced-scene.html">Advanced Scene</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui main text container">
+    <h1>Interaction</h1>
+    <p>The cursor component lets us interact with entities through clicking and gazing. It uses the raycaster component to:</p>
+
+<ul>
+  <li>Listen for mouse clicks and gaze-based fuses.</li>
+  <li>Capture only the first intersected entity.</li>
+  <li>Emit special mouse and hover events (e.g., relating to mouse down/up/enter/leave).</li>
+  <li>Have additional states for hovering.</li>
+</ul>
+
+<p><img src="https://i.imgur.com/WSfndpr.gif" alt="" class="ui image centered" /></p>
+
+<p>You can specify if the cursor should be <code class="highlighter-rouge">fuse</code> based.</p>
+
+<blockquote class="ui piled segment">
+  <p>If the cursor is set to be fuse-based, the cursor will trigger a click if the user gazes at one entity for a set amount of time. Imagine a laser strapped to the user’s head, and the laser extends out into the scene. After the timeout, whatever entity the laser intersects first will be clicked.</p>
+
+  <p>Fuse-based interactions can feel natural for VR and do not require any additional input devices other than the headset.</p>
+</blockquote>
+
+<p>You can specify the <code class="highlighter-rouge">maxDistance</code> that entities should be clickable in.</p>
+
+<p>You can specify the <code class="highlighter-rouge">timeout</code>, to set how long something should be gazed at before a “click” is emitted.</p>
+
+<p>You can use the <code class="highlighter-rouge">fusing</code> and <code class="highlighter-rouge">click</code> events to trigger animations to indicate what the cursor is doing.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a-entity</span>
+  <span class="na">cursor=</span><span class="s">"fuse: true; maxDistance: 30; timeout: 500"</span>
+  <span class="na">position=</span><span class="s">"0 0 -5"</span>
+  <span class="na">geometry=</span><span class="s">"primitive: ring"</span>
+  <span class="na">material=</span><span class="s">"color: white; shader: flat"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a-animation</span>
+    <span class="na">begin=</span><span class="s">"click"</span>
+    <span class="na">easing=</span><span class="s">"ease-in"</span>
+    <span class="na">attribute=</span><span class="s">"scale"</span>
+    <span class="na">fill=</span><span class="s">"backwards"</span>
+    <span class="na">from=</span><span class="s">"0.1 0.1 0.1"</span>
+    <span class="na">to=</span><span class="s">"1 1 1"</span><span class="nt">&gt;&lt;/a-animation&gt;</span>
+  <span class="nt">&lt;a-animation</span>
+    <span class="na">begin=</span><span class="s">"fusing"</span>
+    <span class="na">easing=</span><span class="s">"ease-in"</span>
+    <span class="na">attribute=</span><span class="s">"scale"</span>
+    <span class="na">fill=</span><span class="s">"forwards"</span>
+    <span class="na">from=</span><span class="s">"1 1 1"</span>
+    <span class="na">to=</span><span class="s">"0.1 0.1 0.1"</span><span class="nt">&gt;&lt;/a-animation&gt;</span>
+<span class="nt">&lt;/a-entity&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="further-reading">Further reading:</h2>
+
+<ul>
+  <li><a href="https://aframe.io/docs/0.2.0/components/cursor.html">A-Frame Docs: Cursor</a></li>
+</ul>
+
+  </div>
+</body>
+</html>

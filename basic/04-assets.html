@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Assets</title>
+  <link rel="stylesheet" href="/assets/semantic.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/rouge.css">
+</head>
+<body>
+<div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="/" class="header item">
+        A-Frame Guide
+      </a>
+      <a href="/" class="item">Home</a>
+      <div class="ui simple dropdown item">
+        Basic <i class="dropdown icon"></i>
+        <div class="menu">
+          
+          
+            <a class="item" href="/basic/01-entities.html">Entities</a>
+          
+            <a class="item" href="/basic/02-components.html">Components</a>
+          
+            <a class="item" href="/basic/03-materials.html">Materials</a>
+          
+            <a class="item" href="/basic/04-assets.html">Assets</a>
+          
+            <a class="item" href="/basic/05-lighting.html">Lighting</a>
+          
+            <a class="item" href="/basic/06-sizing.html">Sizing</a>
+          
+            <a class="item" href="/basic/07-position.html">Position</a>
+          
+            <a class="item" href="/basic/08-grouping.html">Grouping</a>
+          
+            <a class="item" href="/basic/09-animation.html">Animation</a>
+          
+            <a class="item" href="/basic/10-interaction.html">Interaction</a>
+          
+            <a class="item" href="/basic/11-vr-mode.html">VR Mode</a>
+          
+        </div>
+      </div>
+      <div class="ui simple dropdown item">
+        Advanced <i class="dropdown icon"></i>
+        <div class="menu">
+          
+          
+            <a class="item" href="/advanced/01-javascript.html">JavaScript</a>
+          
+            <a class="item" href="/advanced/02-templating.html">Templating</a>
+          
+            <a class="item" href="/advanced/03-advanced-scene.html">Advanced Scene</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui main text container">
+    <h1>Assets</h1>
+    <p>Assets are placed within <code class="highlighter-rouge">&lt;a-assets&gt;</code>, which is placed within <code class="highlighter-rouge">&lt;a-scene&gt;</code>. Assets include:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">&lt;a-asset-item&gt;</code> - Miscellaneous assets such as 3D models</li>
+  <li><code class="highlighter-rouge">&lt;a-mixin&gt;</code> - Reusable mixins</li>
+  <li><code class="highlighter-rouge">&lt;audio&gt;</code> - Sound files</li>
+  <li><code class="highlighter-rouge">&lt;img&gt;</code> - Image textures</li>
+  <li><code class="highlighter-rouge">&lt;video&gt;</code> - Video textures</li>
+</ul>
+
+<p>As you can see, you can use regular <code class="highlighter-rouge">&lt;audio&gt;</code>, <code class="highlighter-rouge">&lt;img&gt;</code> and <code class="highlighter-rouge">&lt;video&gt;</code> elements as assets.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a-assets&gt;</span>
+  <span class="c">&lt;!-- an image to be used as a texture --&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">id=</span><span class="s">"texture1"</span> <span class="na">src=</span><span class="s">"texture.png"</span> <span class="nt">/&gt;</span>
+  <span class="c">&lt;!-- a sound asset --&gt;</span>
+  <span class="nt">&lt;audio</span> <span class="na">id=</span><span class="s">"willheim"</span> <span class="na">src=</span><span class="s">"scream.mp3"</span><span class="nt">&gt;&lt;/audio&gt;</span>
+  <span class="c">&lt;!-- a mixin --&gt;</span>
+  <span class="nt">&lt;a-mixin</span> <span class="na">id=</span><span class="s">"giant"</span> <span class="na">scale=</span><span class="s">"10 10 10"</span><span class="nt">&gt;&lt;/a-mixin&gt;</span>
+<span class="nt">&lt;/a-assets&gt;</span>
+</code></pre>
+</div>
+
+<p>The scene loading will be blocked until all of these assets are fetched (or fail to load).</p>
+
+<p>The default timeout for loading an asset is 3 seconds. This can be changed using the <code class="highlighter-rouge">timeout</code> attribute on <code class="highlighter-rouge">&lt;a-assets&gt;</code>.</p>
+
+<p>To use the assets, you can simply reference them by their unique id’s</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a-entity</span>
+  <span class="na">geometry=</span><span class="s">"primitive: box"</span>
+  <span class="na">material=</span><span class="s">"src: #texture1"</span>
+  <span class="na">mixin=</span><span class="s">"giant"</span>
+<span class="nt">&gt;&lt;/a-entity&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="further-reading">Further reading:</h2>
+
+<ul>
+  <li><a href="https://aframe.io/docs/0.2.0/core/asset-management-system.html">A-Frame Docs: Asset Management</a></li>
+</ul>
+
+  </div>
+</body>
+</html>

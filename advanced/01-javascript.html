@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JavaScript</title>
+  <link rel="stylesheet" href="/assets/semantic.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/rouge.css">
+</head>
+<body>
+<div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="/" class="header item">
+        A-Frame Guide
+      </a>
+      <a href="/" class="item">Home</a>
+      <div class="ui simple dropdown item">
+        Basic <i class="dropdown icon"></i>
+        <div class="menu">
+          
+          
+            <a class="item" href="/basic/01-entities.html">Entities</a>
+          
+            <a class="item" href="/basic/02-components.html">Components</a>
+          
+            <a class="item" href="/basic/03-materials.html">Materials</a>
+          
+            <a class="item" href="/basic/04-assets.html">Assets</a>
+          
+            <a class="item" href="/basic/05-lighting.html">Lighting</a>
+          
+            <a class="item" href="/basic/06-sizing.html">Sizing</a>
+          
+            <a class="item" href="/basic/07-position.html">Position</a>
+          
+            <a class="item" href="/basic/08-grouping.html">Grouping</a>
+          
+            <a class="item" href="/basic/09-animation.html">Animation</a>
+          
+            <a class="item" href="/basic/10-interaction.html">Interaction</a>
+          
+            <a class="item" href="/basic/11-vr-mode.html">VR Mode</a>
+          
+        </div>
+      </div>
+      <div class="ui simple dropdown item">
+        Advanced <i class="dropdown icon"></i>
+        <div class="menu">
+          
+          
+            <a class="item" href="/advanced/01-javascript.html">JavaScript</a>
+          
+            <a class="item" href="/advanced/02-templating.html">Templating</a>
+          
+            <a class="item" href="/advanced/03-advanced-scene.html">Advanced Scene</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui main text container">
+    <h1>JavaScript</h1>
+    <p>You can select and manipulate A-Frame entities and components as you would any other HTML.</p>
+
+<h2 id="vanilla-javascript">Vanilla JavaScript</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'a-image'</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">'opacity'</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">'material'</span><span class="p">,</span> <span class="s1">'color'</span><span class="p">,</span> <span class="s1">'red'</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'collide'</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'a-entity'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h2 id="with-libraries">With Libraries</h2>
+<p>With libraries…</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="s1">'a-box'</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'width'</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+
+<span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s1">'a-scene'</span><span class="p">).</span><span class="nx">selectAll</span><span class="p">(</span><span class="s1">'a-box.bar'</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<h2 id="aframe">AFRAME</h2>
+
+<p>A-Frame exposes its public interface through the window.AFRAME browser global. This same interface is exposed if requiring with NPM (require(‘aframe’);). AFRAME can be used to register new things and extend AFRAME’s capabilities.</p>
+
+<h2 id="further-reading">Further reading:</h2>
+
+<ul>
+  <li><a href="https://aframe.io/docs/0.2.0/core/AFRAME.html">A-Frame Docs: AFRAME</a></li>
+</ul>
+
+  </div>
+</body>
+</html>
