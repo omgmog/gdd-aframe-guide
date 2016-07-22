@@ -2,7 +2,6 @@
 layout: base
 title: Materials
 type: basic
-order: 3
 ---
 
 The material component defines the appearance of an entity. The built-in shaders allow us to define properties such as color, opacity, or textures.

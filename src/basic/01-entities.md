@@ -2,7 +2,6 @@
 layout: base
 title: Entities
 type: basic
-order: 1
 ---
 
 An entity is represented by `<a-entity>`. It is the core building block that comprises everything within a scene.

@@ -2,7 +2,6 @@
 layout: base
 title: Assets
 type: basic
-order: 4
 ---
 
 Assets are placed within `<a-assets>`, which is placed within `<a-scene>`. Assets include:

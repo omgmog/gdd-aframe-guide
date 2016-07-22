@@ -2,7 +2,6 @@
 layout: base
 title: Sizing
 type: basic
-order: 5
 ---
 
 When you create an entity, you can specify it's dimensions using the component attributes:

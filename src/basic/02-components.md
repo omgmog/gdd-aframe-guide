@@ -2,7 +2,6 @@
 layout: base
 title: Components
 type: basic
-order: 2
 ---
 
 A component is represented by an HTML attribute

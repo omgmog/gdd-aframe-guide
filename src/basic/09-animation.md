@@ -2,7 +2,6 @@
 layout: base
 title: Animation
 type: basic
-order: 8
 ---
 
 Animations in A-Frame are defined by attaching an `<a-animation>` element as a child of the entity to animate.

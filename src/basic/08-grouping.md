@@ -2,7 +2,6 @@
 layout: base
 title: Grouping
 type: basic
-order: 7
 ---
 
 As you start to create more complicated scenes in A-Frame, you will want to group entities to make scaling or animating them easier.

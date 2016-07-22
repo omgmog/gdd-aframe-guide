@@ -18,7 +18,7 @@
       <div class="ui simple dropdown item">
         Basic <i class="dropdown icon"></i>
         <div class="menu">
-          {% assign basic = (site.pages | where: "type", "basic" | sort: "order") %}
+          {% assign basic = (site.pages | where: "type", "basic") %}
           {% for page in basic %}
             <a class="item" href="{{ page.url }}">{{ page.title }}</a>
           {% endfor %}
@@ -27,7 +27,7 @@
       <div class="ui simple dropdown item">
         Advanced <i class="dropdown icon"></i>
         <div class="menu">
-          {% assign advanced = (site.pages | where: "type", "advanced" | sort: "order") %}
+          {% assign advanced = (site.pages | where: "type", "advanced") %}
           {% for page in advanced %}
             <a class="item" href="{{ page.url }}">{{ page.title }}</a>
           {% endfor %}

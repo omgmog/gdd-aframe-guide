@@ -2,7 +2,6 @@
 layout: base
 title: Position
 type: basic
-order: 6
 ---
 
 Positioning entities is done by specifying the offset on the `x`, `y` and `z` axis.

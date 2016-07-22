@@ -2,7 +2,6 @@
 layout: base
 title: Interaction
 type: basic
-order: 9
 ---
 
 The cursor component lets us interact with entities through clicking and gazing. It uses the raycaster component to:
