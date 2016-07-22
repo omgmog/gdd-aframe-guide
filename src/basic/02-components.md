@@ -27,3 +27,4 @@ If a component has more than one property to define, then properties are passed 
 ## Further reading:
 
 - [A-Frame Docs: Components](https://aframe.io/docs/0.2.0/core/component.html)
+- [A-Frame Docs: Attributes](https://aframe.io/docs/0.2.0/primitives/mesh-attributes.html)
