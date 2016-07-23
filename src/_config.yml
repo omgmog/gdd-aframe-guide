@@ -1,3 +1,4 @@
+urlbase: /gdd-aframe-guide
 markdown: kramdown
 sass:
   style: compressed

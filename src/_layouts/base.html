@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/semantic.css">
-  <link rel="stylesheet" href="/assets/style.css">
-  <link rel="stylesheet" href="/assets/rouge.css">
+  <link rel="stylesheet" href="{{ site.urlbase }}/assets/semantic.css">
+  <link rel="stylesheet" href="{{ site.urlbase }}/assets/style.css">
+  <link rel="stylesheet" href="{{ site.urlbase }}/assets/rouge.css">
 </head>
 <body>
 <div class="ui fixed inverted menu">
     <div class="ui container">
-      <a href="/" class="header item">
+      <a href="{{ site.urlbase }}/" class="header item">
         A-Frame Guide
       </a>
       <a href="/" class="item">Home</a>
@@ -20,7 +20,7 @@
         <div class="menu">
           {% assign basic = (site.pages | where: "type", "basic") %}
           {% for page in basic %}
-            <a class="item" href="{{ page.url }}">{{ page.title }}</a>
+            <a class="item" href="{{ site.urlbase }}{{ page.url }}">{{ page.title }}</a>
           {% endfor %}
         </div>
       </div>
@@ -29,7 +29,7 @@
         <div class="menu">
           {% assign advanced = (site.pages | where: "type", "advanced") %}
           {% for page in advanced %}
-            <a class="item" href="{{ page.url }}">{{ page.title }}</a>
+            <a class="item" href="{{ site.urlbase }}{{ page.url }}">{{ page.title }}</a>
           {% endfor %}
         </div>
       </div>
