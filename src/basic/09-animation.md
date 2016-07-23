@@ -23,7 +23,7 @@ Here's an example to make an entity rotate on it's `y` axis:
 </a-entity>
 ```
 
-![](http://i.imgur.com/XcLI5wM.gif){:.ui.image.centered.fluid}
+![](https://i.imgur.com/XcLI5wM.gif){:.ui.image.centered.fluid}
 
 
 ## Further reading:

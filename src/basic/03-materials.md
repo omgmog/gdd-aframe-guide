@@ -24,7 +24,7 @@ Here is an example of using the "flat" built-in shading model:
 ></a-entity>
 ```
 
-![](http://i.imgur.com/ACP2Ekl.png){:.ui.image.centered.fluid}
+![](https://i.imgur.com/ACP2Ekl.png){:.ui.image.centered.fluid}
 
 You can also specify the `opacity` of the material.
 
@@ -35,7 +35,7 @@ You can also specify the `opacity` of the material.
 ></a-entity>
 ```
 
-![](http://i.imgur.com/3EvCSMg.png){:.ui.image.centered.fluid}
+![](https://i.imgur.com/3EvCSMg.png){:.ui.image.centered.fluid}
 
 You can apply textures that you've specified in your `<a-assets>` like this:
 
@@ -46,7 +46,7 @@ You can apply textures that you've specified in your `<a-assets>` like this:
 ></a-entity>
 ```
 
-![](http://i.imgur.com/Relfn7S.png){:.ui.image.centered.fluid}
+![](https://i.imgur.com/Relfn7S.png){:.ui.image.centered.fluid}
 
 If you're using textures with alpha transparency, you can tell A-Frame to render these after everything else so that the transparency works:
 
@@ -57,7 +57,7 @@ If you're using textures with alpha transparency, you can tell A-Frame to render
 ></a-entity>
 ```
 
-![](http://i.imgur.com/cUkAuI5.png){:.ui.image.centered.fluid}
+![](https://i.imgur.com/cUkAuI5.png){:.ui.image.centered.fluid}
 
 ## Further reading:
 

@@ -10,7 +10,7 @@ To group entities, you just need to wrap them in an entity, and then apply all o
 
 Here's an example arcade joystick:
 
-![](http://i.imgur.com/igRo6Dk.gif){:.ui.image.centered.fluid}
+![](https://i.imgur.com/igRo6Dk.gif){:.ui.image.centered.fluid}
 
 ```html
 <a-entity scale=".25 .25 .25">
